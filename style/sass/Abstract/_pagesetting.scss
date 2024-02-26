@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // @include font-Lato;
+}
+
+* {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
+.center {
+    padding-left: calc(50% - $widthSite/2);
+    padding-right: calc(50% - $widthSite/2);
+}
+
+
+
+
+
+
+
+
+
+// main {
+//     @include displayFlex_ALL_Center
+// }

@@ -1,0 +1,10 @@
+//общие настройки страницы миксины и переменные
+@import "sass/Abstract/all";
+//уникальные настройки страницы
+@import "sass/pages/all.scss";
+//блоки
+@import "sass/layout/all.scss";
+//компоненты
+@import "sass/components/all.scss";
+//разрешения экрана
+@import "sass/screen_resolutions/all.scss";
