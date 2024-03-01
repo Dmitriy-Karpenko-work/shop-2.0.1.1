@@ -18,12 +18,7 @@
     }
 
     &__bread-crumps {
-        font-family: Lato;
-        // font-size: 14px;
-        // font-weight: 700;
-        // line-height: 17px;
-        // letter-spacing: 0em;
-        // text-align: left;
+        display: flex;
 
         font-family: Lato;
         font-size: 14px;
@@ -31,13 +26,22 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
+        color: $TextColor2;
 
-        .text {
-            color: $TextColor2;
+
+        &__link:not(:last-child)::after {
+            content: '/';
+            padding: 8px;
         }
 
-        &__current_page {
+        &__link:last-child {
             color: $MainColorPink;
+            font-weight: bold;
         }
+
+
+
+
+
     }
 }

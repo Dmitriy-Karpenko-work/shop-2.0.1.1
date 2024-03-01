@@ -16,15 +16,45 @@
         color: inherit;
     }
 
+    // сброс стилий summery
     summary::-webkit-details-marker {
         display: none;
     }
+
+    // сброс стилий unlisted list
+    ul {
+        list-style-type: none;
+    }
+
+    // сброс стрелок у input number
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0;
+        /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
 }
 
 .center {
     padding-left: calc(50% - $widthSite/2);
     padding-right: calc(50% - $widthSite/2);
 }
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
 
 
 

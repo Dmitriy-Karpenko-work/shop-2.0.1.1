@@ -19,3 +19,20 @@
 //     }
 
 // }
+
+@media (min-width:360px) and (max-width:1160px) {
+    .shopping-cart {
+        display: flex;
+        flex-direction: column;
+
+        &__right {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+    }
+}

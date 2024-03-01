@@ -1,0 +1,46 @@
+.pink-bottom {
+    @include displayFlex_ALL_Center;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $TextColor3;
+    background-color: $MainColorPink;
+
+    span {
+        pointer-events: none;
+    }
+}
+
+.pink-bottom:hover {
+    color: $TextColor1;
+    filter: brightness(0.5);
+}
+
+
+
+
+.white-bottom {
+    @include displayFlex_ALL_Center;
+
+
+
+    color: $TextColor2;
+    background-color: white;
+
+    span {
+        pointer-events: none;
+    }
+}
+
+.white-bottom:hover {
+
+    color: $TextColor3;
+    background-color: $MainColorPink;
+
+
+}

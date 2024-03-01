@@ -3,6 +3,7 @@ main {
     gap: 0px;
 }
 
+
 .filter-sort {
     position: relative;
     height: 132px;
@@ -108,8 +109,10 @@ main {
     padding-top: 16px;
     gap: 16px;
     left: 45%;
+
+    // padding-right: 50%;
     // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // transform: translate(-50%, -50%);
+    //transform: translate(-50%, -50%);
 
     &__name-summary {
         display: flex;
@@ -120,6 +123,14 @@ main {
 
     &__box-sort {
         &[open] {
+            z-index: 55;
+            transition: 300ms;
+            background: #fff;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.24);
+            padding: 0px 30px 11px 9px;
+        }
+
+        &[close] {
             z-index: 55;
             transition: 300ms;
             background: #fff;
