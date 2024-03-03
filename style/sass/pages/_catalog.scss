@@ -7,6 +7,7 @@ main {
 .filter-sort {
     position: relative;
     height: 132px;
+    padding-top: 25px;
     padding-left: calc(50% - $widthSite/2 + 225px);
     padding-right: calc(50% - $widthSite/2 + 225px);
 }
@@ -19,7 +20,7 @@ main {
 
 
     &[open] {
-        z-index: 55;
+        z-index: 5;
         transition: 300ms;
         background: #fff;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.24);
@@ -123,7 +124,7 @@ main {
 
     &__box-sort {
         &[open] {
-            z-index: 55;
+            z-index: 5;
             transition: 300ms;
             background: #fff;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.24);

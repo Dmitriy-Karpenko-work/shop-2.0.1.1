@@ -1,0 +1,93 @@
+.conteiner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    gap: 128px;
+
+    margin-left: 100px;
+}
+
+.registration-section {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: auto;
+    gap: 20px;
+
+    &__title {
+        // padding-top: 5px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $TextColor2;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .reg-btm {
+            width: 167px;
+            height: 50px;
+            border: transparent;
+        }
+
+        .text-password {
+            font-family: Lato;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #B1B1B1;
+
+
+        }
+
+        .log {
+            padding-top: 20px;
+        }
+    }
+
+    .control-group {
+        display: flex;
+        gap: 15px;
+        padding: 5px 0px;
+
+    }
+
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 652px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+
+
+
+        li {
+            display: flex;
+            gap: 22px;
+        }
+    }
+
+}

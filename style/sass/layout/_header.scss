@@ -1,19 +1,19 @@
 nav {
     background-color: $Mainbackgroungcolor;
+
 }
 
 .top-menu {
-    // * {
-    //     @include displayFlex_ALL_Center;
-    // }
-
-    // max-width: 1600px;
     height: 75px;
-
-
     background-color: $Mainbackgroungcolor;
     display: flex;
     justify-content: space-around;
+
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
 
 
     .logo-search {
@@ -27,10 +27,70 @@ nav {
             height: 38px;
         }
 
+        .search-hover {
+            display: flex;
+            flex-direction: row;
+            @include displayFlex_ALL_Center;
+            gap: 10px;
+        }
+
         .search {
             content: url(../style/img/header/search_header.svg);
-            width: 26px;
-            height: 27px;
+            position: relative;
+            width: 30px;
+            height: 31px;
+
+
+
+            &__form {
+
+                display: flex;
+                flex-direction: row;
+                font-family: "Lato";
+
+                .input {
+                    box-shadow: none;
+                }
+
+                .custom_input {
+                    background-color: #3a3a3a;
+                    width: 400px;
+                    height: 40px;
+                    border: 1px solid $MainColorPink;
+
+                    border-radius: 5px 5px 5px 5px;
+
+                }
+
+                .input:focus {
+                    background: #F2F2F2;
+                    border: 1px solid $MainColorPink;
+                    border-right: 1px solid transparent;
+
+
+                }
+
+                .button {
+                    // display: none;
+                    z-index: 1;
+                    border: 1px solid $MainColorPink;
+
+
+                    background-color: #F2F2F2;
+
+                    border-radius: 5px;
+                    width: 100px;
+                    height: 40px;
+                }
+
+                // .input:focus(.button) {
+                //     display: block;
+                // }
+            }
+
+
+
+
         }
 
 
@@ -45,20 +105,20 @@ nav {
         //     background: $MainColorPink;
         .user_info__setting {
             content: url(../style/img/header/setting_header.svg);
-            width: 32px;
-            height: 23px;
+            width: 36px;
+            height: 27px;
         }
 
         .user_info__user {
             content: url(../style/img/header/user_header.svg);
-            width: 29px;
-            height: 29px;
+            width: 33px;
+            height: 33px;
         }
 
         .user_info__shopping-cart {
             content: url(../style/img/header/shopping-cart_header.svg);
-            width: 32px;
-            height: 29px;
+            width: 36px;
+            height: 33px;
         }
 
     }
@@ -73,11 +133,9 @@ nav {
         height: 34px;
     }
 
-    // .icon-header {
-    //     @include displayFlex_ALL_Center;
-    //     border-radius: 5px;
-    //     margin: -3px;
-    // }
+    .icon-header {
+        padding: 5px;
+    }
 }
 
 // главная страница обложка
